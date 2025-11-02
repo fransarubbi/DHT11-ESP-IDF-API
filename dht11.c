@@ -264,7 +264,7 @@ static esp_err_t dht11_decode_data(void) {
  *
  * @return esp_err_t Devuelve un ESP_OK si el proceso fue exitoso, sino ESP_FAIL.
  */
-static esp_err_t dht11_read_data(void) {
+esp_err_t dht11_read_data(void) {
 
     esp_err_t ret = dht11_start_and_receive();
     if (ret != ESP_OK) {
